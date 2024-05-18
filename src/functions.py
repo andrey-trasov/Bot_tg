@@ -6,7 +6,7 @@ def reading_employee():
     считывает данные с json файла
     :return: словарь с сотрудниками
     """
-    with open('employee.json', 'r', encoding='utf-8') as file:
+    with open('../data/employee.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
         return data
 
@@ -16,7 +16,7 @@ def write_employee(employee):
     записывает данные сотрудников в json файл
     :param employee: словарь сотруников
     """
-    with open('employee.json', 'w', encoding='utf-8') as file:
+    with open('../data/employee.json', 'w', encoding='utf-8') as file:
         json.dump(employee, file)
 
 
@@ -74,4 +74,6 @@ def search_employee_data(username_tg):
 
 # add_new_employee("L_Art007", 'Артем Лазарев', 654321)
 
-print(search_employee_data('tdryn4ik'))
+# print(search_employee_data('tdryn4ik'))
+
+# delete_old_employee("L_Art007", 'Артем Лазарев', 654321)

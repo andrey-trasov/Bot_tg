@@ -74,6 +74,4 @@ def search_employee_data(username_tg):
 
 # add_new_employee("L_Art007", 'Артем Лазарев', 654321)
 
-# print(search_employee_data('tdryn4ik'))
-
-# delete_old_employee("L_Art007", 'Артем Лазарев', 654321)
+print(search_employee_data('tdryn4ik'))
